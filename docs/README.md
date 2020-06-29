@@ -11,6 +11,7 @@ When you complete this training you will
   * be able to create CMake build descriptions for you software projects;
   * be able to handle dependencies;
   * be able to generate documentation with Doxygen using CMake;
+  * be able to run tests using CTest;
   * be able to run static code validators as part of your build process.
 
 
