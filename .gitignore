@@ -34,3 +34,6 @@
 # Editor backup files
 *~
 *.bak
+
+# CMake build directories
+build/
