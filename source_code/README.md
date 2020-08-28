@@ -14,3 +14,5 @@ various subdirectories.
 1. `testing`: example of using CTest.
 1. `doxygen`: example of generating doxygen documentation.
 1. `clang_tidy`: example of invoking clang-tidy during the build process.
+1. `artefact`: example of how to generate code at build time that is used as
+   part of further build steps.
