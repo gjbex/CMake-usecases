@@ -17,3 +17,4 @@ various subdirectories.
 1. `artefact`: example of how to generate code at build time that is used as
    part of further build steps.
 1. `openmp`: example of building an OpenMP application.
+1. `mpi`: example of building an MPI application.
