@@ -14,3 +14,7 @@ various subdirectories.
 1. `testing`: example of using CTest.
 1. `doxygen`: example of generating doxygen documentation.
 1. `clang_tidy`: example of invoking clang-tidy during the build process.
+1. `openmp`: example of using OpenMP.
+1. `mpi`: example of using MPI.
+1. `blas_lapack/`: example of using BLAS and Lapack, as well as specifying
+   a specific BLAS/LAPACK implementation (i.e., MKL versus OpenBLAS).
