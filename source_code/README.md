@@ -20,3 +20,4 @@ various subdirectories.
    part of further build steps.
 1. `openmp`: example of building an OpenMP application.
 1. `mpi`: example of building an MPI application.
+1. `hdf5`: example of building a Fortran application that uses HDF5.
