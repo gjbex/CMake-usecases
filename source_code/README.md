@@ -21,3 +21,4 @@ various subdirectories.
 1. `openmp`: example of building an OpenMP application.
 1. `mpi`: example of building an MPI application.
 1. `hdf5`: example of building a Fortran application that uses HDF5.
+1. `conan`: example of using the Conan C++ package manager.
