@@ -22,3 +22,5 @@ various subdirectories.
 1. `mpi`: example of building an MPI application.
 1. `hdf5`: example of building a Fortran application that uses HDF5.
 1. `conan`: example of using the Conan C++ package manager.
+1. `static_build`: example of an application that uses external libraries
+   but which is build statically.
