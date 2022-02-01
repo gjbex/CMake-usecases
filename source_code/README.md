@@ -24,3 +24,5 @@ various subdirectories.
 1. `conan`: example of using the Conan C++ package manager.
 1. `static_build`: example of an application that uses external libraries
    but which is build statically.
+1. `static_boost`: example of an application that uses Boost Log and
+   Filesystem and is statically linked.
