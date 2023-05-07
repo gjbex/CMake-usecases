@@ -26,3 +26,4 @@ various subdirectories.
    but which is build statically.
 1. `static_boost`: example of an application that uses Boost Log and
    Filesystem and is statically linked.
+1. `tbb`: example of building an application that uses TBB.
