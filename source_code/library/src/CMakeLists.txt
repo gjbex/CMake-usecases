@@ -1,12 +1,12 @@
-# add executable:w
+# add executable
 add_executable(stats.exe stats_main.cpp)
 # add include directory for header files
 target_include_directories(stats.exe PUBLIC stats)
 # add libraries to link executable with
 target_link_libraries(stats.exe stats)
 
-# add executable:w
-add_executable(table_stats.exe stats_main.cpp)
+# add executable
+add_executable(table_stats.exe table_stats_main.cpp)
 # add include directory for header files
 target_include_directories(table_stats.exe PUBLIC stats)
 # add libraries to link executable with
@@ -19,5 +19,4 @@ add_subdirectory(stats)
 install(TARGETS stats.exe table_stats.exe
         RUNTIME
           DESTINATION bin
-          COMPONENT runtime
-       )
+          COMPONENT runtime)
