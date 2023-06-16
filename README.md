@@ -1,8 +1,6 @@
 # CMake introduction
 
-GitHub repository for participants of the "CMake introduction" training.
-For information on the training, see the website
-[https://gjbex.github.io/CMake-intro/](https://gjbex.github.io/CMake-intro/)
+GitHub repository for interesting use cases of CMake.
 
 
 ## What is it?
