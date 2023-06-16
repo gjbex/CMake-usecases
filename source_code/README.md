@@ -31,3 +31,5 @@ various subdirectories.
    C++ code for a shared libary and two executable, as well as a Python
    script and supporting modules.  Specifically illustrates installation
    of non-targets.
+1. `templates`: example of installing a pure Python project that generates
+   Bash wrapper scripts for each Python script from a common template.
