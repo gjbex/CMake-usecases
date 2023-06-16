@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# determine true location of Bash script
+exec=$(readlink -f ${0})
+
+# determine directory of vsc-module-dependencies
+exec_dir=$( cd -P "$( dirname "${exec}" )" && pwd )
+base_dir="${exec_dir}/.."
+script_dir="${base_dir}/lib"
+module_dir="${base_dir}/lib"
+
+export PYTHONPATH="${module_dir}:${PYTHONPATH}"
+
+python "${script_dir}/@python_script_name@" "$@"

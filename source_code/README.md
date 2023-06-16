@@ -24,3 +24,12 @@ various subdirectories.
 1. `conan`: example of using the Conan C++ package manager.
 1. `static_build`: example of an application that uses external libraries
    but which is build statically.
+1. `static_boost`: example of an application that uses Boost Log and
+   Filesystem and is statically linked.
+1. `tbb`: example of building an application that uses TBB.
+1. `mixed_code_scripts_install`: example of a project that contains
+   C++ code for a shared libary and two executable, as well as a Python
+   script and supporting modules.  Specifically illustrates installation
+   of non-targets.
+1. `templates`: example of installing a pure Python project that generates
+   Bash wrapper scripts for each Python script from a common template.
