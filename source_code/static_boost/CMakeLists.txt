@@ -20,8 +20,8 @@ endif (NOT Boost_FOUND)
 
 add_executable(file_logging.exe file_logging.cpp)
 target_include_directories(file_logging.exe PRIVATE ${Boost_INCLUDE_DIR})
-target_link_libraries(file_logging.exe LINK_PRIVATE ${Boost_LIBRARIES})
+target_link_libraries(file_logging.exe LINK_PRIVATE ${Boost_LIBRARIES} -static)
 
 add_executable(auto_flush.exe auto_flush.cpp)
 target_include_directories(auto_flush.exe PRIVATE ${Boost_INCLUDE_DIR})
-target_link_libraries(auto_flush.exe LINK_PRIVATE ${Boost_LIBRARIES})
+target_link_libraries(auto_flush.exe LINK_PRIVATE ${Boost_LIBRARIES} -static)
