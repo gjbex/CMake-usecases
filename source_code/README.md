@@ -33,3 +33,4 @@ various subdirectories.
    of non-targets.
 1. `templates`: example of installing a pure Python project that generates
    Bash wrapper scripts for each Python script from a common template.
+1. `cuda`: example of how to build CUDA code.
