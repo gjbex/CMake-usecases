@@ -1,4 +1,4 @@
-# CMake introduction
+# CMake use cases
 
 GitHub repository for interesting use cases of CMake.
 
