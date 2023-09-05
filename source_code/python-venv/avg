@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# Bash script that wraps the Python script avg.py such
+# that it activates the virtual enviornment in ../venv
+# so that the required Python interpreter and packages
+# are used without the user having to load them.
+
+# get the absolute path of this script and extract the directory
+SCRIPT_PATH=$(realpath "$0")
+DIRECTORY=$(dirname "$SCRIPT_PATH")
+FILE_NAME=$(basename "$SCRIPT_PATH")
+
+# activate the virtual environment
+source $DIRECTORY/../venv/bin/activate
+
+# run the Python script
+python $DIRECTORY/../lib/${FILE_NAME}.py "$@"

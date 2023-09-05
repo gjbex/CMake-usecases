@@ -34,3 +34,7 @@ various subdirectories.
 1. `templates`: example of installing a pure Python project that generates
    Bash wrapper scripts for each Python script from a common template.
 1. `cuda`: example of how to build CUDA code.
+1. `python-venv`: example of how to create a Python virtual environment
+   that should be used at runtime to execute a Python script.  This includes
+   a Bash script as a wrapper to enscapsulate the Python interpreter and
+   dependencies.
