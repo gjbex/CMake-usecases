@@ -38,3 +38,4 @@ various subdirectories.
    that should be used at runtime to execute a Python script.  This includes
    a Bash script as a wrapper to enscapsulate the Python interpreter and
    dependencies.
+1. `rpath`: illustration of how to build with RPATH.
