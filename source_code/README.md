@@ -39,3 +39,5 @@ various subdirectories.
    a Bash script as a wrapper to enscapsulate the Python interpreter and
    dependencies.
 1. `rpath`: illustration of how to build with RPATH.
+1. `env_file`: illustration of how to create a file that contains content
+   based on CMake variables during the build process.
