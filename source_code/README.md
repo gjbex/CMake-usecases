@@ -41,3 +41,4 @@ various subdirectories.
 1. `rpath`: illustration of how to build with RPATH.
 1. `env_file`: illustration of how to create a file that contains content
    based on CMake variables during the build process.
+1. `cython`: illustration of using CMake to build Cython extensions.
