@@ -64,3 +64,8 @@ add_test(
     COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/test_wrapper.sh sleep 10
 )
 set_tests_properties(timeout_test PROPERTIES TIMEOUT 3)
+
+add_test(
+    NAME missing_executable_test
+    COMMAND missing.exe
+)
