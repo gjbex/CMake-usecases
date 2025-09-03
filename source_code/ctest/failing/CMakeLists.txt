@@ -11,6 +11,8 @@ target_link_libraries(compute.exe m)
 
 add_executable(segfault.exe segfault.c)
 
+add_executable(non_zero_exit.exe non_zero_exit.c)
+
 include(CTest)
 
 add_test(
@@ -47,3 +49,12 @@ add_test(
     COMMAND segfault.exe
 )
 
+add_test(
+    NAME non_zero_exit_test
+    COMMAND non_zero_exit.exe
+)
+
+add_test(
+    NAME non_zero_exit_test_wrapped
+    COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/test_wrapper.sh $<TARGET_FILE:non_zero_exit.exe>
+)

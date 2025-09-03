@@ -10,6 +10,8 @@ output and log of CTest to learn how to diagnose failures.
    arguments and prints the square root of their division.
 1. `segfault.c`: a simple C application that causes a segmentation fault.
 1. `CMakeLists.txt`: a CMake file to build the applications and define tests.
+1. `test_wrapper.sh`: a bash script to run the applications and capture their exit
+   status.
 
 
 ## How to use it?
