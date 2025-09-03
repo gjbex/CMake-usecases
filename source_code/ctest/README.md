@@ -8,3 +8,4 @@ number of examples.
 
 1. `simple`: a simple example of using CTest.
 1. `failures`: an example to help learn how to diagnose test failures.
+1. `google_test`: an example of using Google Test with CTest.
