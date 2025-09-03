@@ -7,3 +7,5 @@ Simple project that enables testing.
 1. `fac.cpp`: simple C++ application to compute the
    factorial of a number given on the command line.
 1. `CMakeLists.txt`: CMake file that enables testing.
+1. `Fac`: illustration of a CMake build for Catch2, as well
+   as running the tests using CTest.

@@ -1,0 +1,6 @@
+name: cmake_cython
+channels:
+  - conda-forge
+dependencies:
+  - cython
+prefix: /home/gjb/mambaforge/envs/cmake_cython
