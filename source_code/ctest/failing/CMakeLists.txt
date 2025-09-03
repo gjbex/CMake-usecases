@@ -58,3 +58,9 @@ add_test(
     NAME non_zero_exit_test_wrapped
     COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/test_wrapper.sh $<TARGET_FILE:non_zero_exit.exe>
 )
+
+add_test(
+    NAME timeout_test
+    COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/test_wrapper.sh sleep 10
+)
+set_tests_properties(timeout_test PROPERTIES TIMEOUT 3)
