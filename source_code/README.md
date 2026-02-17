@@ -42,3 +42,5 @@ various subdirectories.
 1. `env_file`: illustration of how to create a file that contains content
    based on CMake variables during the build process.
 1. `cython`: illustration of using CMake to build Cython extensions.
+1. `fetch_content/`: example of using CMake's FetchContent module to download and build
+   a third-party library (fmt) as part of the build process.
