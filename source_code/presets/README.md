@@ -24,7 +24,7 @@ $ cmake  --list-presets
 
 To configure the project using a specific preset, use the `--preset` option:
 
-```bashbash
+```bash
 $ cmake  --preset debug
 ```
 
