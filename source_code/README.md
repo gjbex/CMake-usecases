@@ -43,5 +43,5 @@ various subdirectories.
    based on CMake variables during the build process.
 1. `cython`: illustration of using CMake to build Cython extensions.
 1. `fetch_content/`: example of using CMake's FetchContent module to download and build
-   a third-party library (fmt) as part of the build process.
+   a third-party library (CLI11) as part of the build process.
 1. `presets`: basic example of using CMake presets to specify build options.

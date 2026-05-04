@@ -1,4 +1,4 @@
-# Simple
+# Google Test
 
 Very simple example of using Google Test for unit testing of C++ code.
 

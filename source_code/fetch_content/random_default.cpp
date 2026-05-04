@@ -1,6 +1,10 @@
 #include <CLI/CLI.hpp>
+#include <cstddef>
+#include <cstdlib>
 #include <iostream>
 #include <random>
+#include <string>
+#include <tuple>
 
 using Options = std::tuple<int, double, double, size_t>;
 
@@ -24,7 +28,7 @@ Options get_options(int argc, char** argv) {
     int n {default_n};
     double a {default_a};
     double b {default_b};
-    size_t seed;
+    size_t seed {std::random_device{}()};
     CLI::App app{"Generate random numbers"};
     app.add_option("-n", n, "number of random values to generate")->default_val(std::to_string(default_n));
     app.add_option("-a", a, "minimum value")->default_val(std::to_string(default_a));

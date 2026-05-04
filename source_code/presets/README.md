@@ -9,7 +9,7 @@ debug or release mode, respectively.
 
 1. `CMakePresets.json` defines the presets for configuring and building the project.
 1. `src/main.cpp` is the source code for the project, which simply prints
-   "Hello, World!" to the console.
+   "Hello, CMake presets" to the console.
 1. `CMakeLists.txt` is the CMake configuration file that defines how to build the
    project.
 
@@ -24,7 +24,7 @@ $ cmake  --list-presets
 
 To configure the project using a specific preset, use the `--preset` option:
 
-```bashbash
+```bash
 $ cmake  --preset debug
 ```
 

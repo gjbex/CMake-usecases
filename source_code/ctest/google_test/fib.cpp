@@ -1,3 +1,4 @@
+#include "fib.h"
 #include <stdexcept>
 
 int fib(int n) {
