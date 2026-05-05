@@ -91,9 +91,6 @@
     {
       "name": "sanitizers",
       "configurePreset": "sanitizers",
-      "environment": {
-        "ASAN_OPTIONS": "detect_leaks=0"
-      },
       "output": {
         "outputOnFailure": true
       }
