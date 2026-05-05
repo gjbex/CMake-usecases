@@ -17,33 +17,121 @@
       }
     },
     {
-      "name": "debug",
+      "name": "gnu",
+      "hidden": true,
       "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_CXX_COMPILER": "g++"
+      }
+    },
+    {
+      "name": "clang",
+      "hidden": true,
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_CXX_COMPILER": "clang++"
+      }
+    },
+    {
+      "name": "oneapi",
+      "hidden": true,
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_CXX_COMPILER": "icpx"
+      }
+    },
+    {
+      "name": "debug-build",
+      "hidden": true,
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
     },
     {
-      "name": "release",
-      "inherits": "base",
+      "name": "release-build",
+      "hidden": true,
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
     },
     {
-      "name": "gcc-gprof",
-      "inherits": "base",
+      "name": "profiling-build",
+      "hidden": true,
       "cacheVariables": {
-        "CMAKE_CXX_COMPILER": "g++",
-        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+      }
+    },
+    {
+      "name": "debug",
+      "inherits": "gnu-debug"
+    },
+    {
+      "name": "release",
+      "inherits": "gnu-release"
+    },
+    {
+      "name": "gnu-debug",
+      "inherits": [
+        "gnu",
+        "debug-build"
+      ]
+    },
+    {
+      "name": "gnu-release",
+      "inherits": [
+        "gnu",
+        "release-build"
+      ]
+    },
+    {
+      "name": "clang-debug",
+      "inherits": [
+        "clang",
+        "debug-build"
+      ]
+    },
+    {
+      "name": "clang-release",
+      "inherits": [
+        "clang",
+        "release-build"
+      ]
+    },
+    {
+      "name": "oneapi-debug",
+      "inherits": [
+        "oneapi",
+        "debug-build"
+      ]
+    },
+    {
+      "name": "oneapi-release",
+      "inherits": [
+        "oneapi",
+        "release-build"
+      ]
+    },
+    {
+      "name": "gnu-gprof",
+      "inherits": [
+        "gnu",
+        "profiling-build"
+      ],
+      "cacheVariables": {
         "ENABLE_GPROF": "ON"
       }
     },
     {
+      "name": "gcc-gprof",
+      "inherits": "gnu-gprof"
+    },
+    {
       "name": "sanitizers",
-      "inherits": "base",
+      "inherits": [
+        "gnu",
+        "debug-build"
+      ],
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
         "ENABLE_SANITIZERS": "ON"
       }
     }
@@ -56,6 +144,34 @@
     {
       "name": "release",
       "configurePreset": "release"
+    },
+    {
+      "name": "gnu-debug",
+      "configurePreset": "gnu-debug"
+    },
+    {
+      "name": "gnu-release",
+      "configurePreset": "gnu-release"
+    },
+    {
+      "name": "clang-debug",
+      "configurePreset": "clang-debug"
+    },
+    {
+      "name": "clang-release",
+      "configurePreset": "clang-release"
+    },
+    {
+      "name": "oneapi-debug",
+      "configurePreset": "oneapi-debug"
+    },
+    {
+      "name": "oneapi-release",
+      "configurePreset": "oneapi-release"
+    },
+    {
+      "name": "gnu-gprof",
+      "configurePreset": "gnu-gprof"
     },
     {
       "name": "gcc-gprof",
@@ -82,6 +198,55 @@
       }
     },
     {
+      "name": "gnu-debug",
+      "configurePreset": "gnu-debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "gnu-release",
+      "configurePreset": "gnu-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "clang-debug",
+      "configurePreset": "clang-debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "clang-release",
+      "configurePreset": "clang-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "oneapi-debug",
+      "configurePreset": "oneapi-debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "oneapi-release",
+      "configurePreset": "oneapi-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "gnu-gprof",
+      "configurePreset": "gnu-gprof",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
       "name": "gcc-gprof",
       "configurePreset": "gcc-gprof",
       "output": {
@@ -91,6 +256,9 @@
     {
       "name": "sanitizers",
       "configurePreset": "sanitizers",
+      "environment": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+      },
       "output": {
         "outputOnFailure": true
       }
