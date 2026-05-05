@@ -45,3 +45,4 @@ various subdirectories.
 1. `fetch_content/`: example of using CMake's FetchContent module to download and build
    a third-party library (CLI11) as part of the build process.
 1. `presets`: basic example of using CMake presets to specify build options.
+1. `boost`: example of building an application that uses Boost.
